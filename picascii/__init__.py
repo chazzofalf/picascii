@@ -1,3 +1,4 @@
+# Read the Readme.md for instructions!
 # Charles "chazz_the_intrepid" Timothy Montgomery 2023 
 # Use it? Sure! Have Fun. But do please be kind and respectful to others! 
 # Want Make something out this as in extend it or put? Well ping me and tell me about it. I would like to be part of the action! 

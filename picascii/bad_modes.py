@@ -1,3 +1,4 @@
+# Read the Readme.md for instructions!
 # Some potentially controversial and therefore undocumented fun monochrome modes
 def has_immoral_undocumented_mode(mode:str):
     return mode in ['--livie','--evil','--god-mode','--look-up-child','--come-on-elon']

@@ -1,3 +1,4 @@
+# Read the Readme.md for instructions!
 import sys
 try:
     import bad_modes as bm

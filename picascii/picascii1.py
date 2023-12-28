@@ -1,3 +1,4 @@
+# Read the Readme.md for instructions!
 # See installation instructions in Readme or picascii2.py # This is picascii2.py's less interesting monochrome (was butterfly ridden, but user now gets to pick the symbol if they want) original stepbrother.
 import PIL
 import PIL.Image
