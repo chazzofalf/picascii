@@ -86,11 +86,13 @@ Hit Cmd+(NumPad 0) to get back to normal zoom and actually be able to read thing
 
 
 Charles "chazz_the_intrepid" Timothy Montgomery 2023 
-Use it? Sure! Have Fun. But do please be kind and respectful to others! 🦋
-Want Make something out this as in extend it or put? Well ping me and tell me about it. I would like to be part of the action! 🎸 (No, I don't play. I just thought the guitar would be cool to put there. 😁)
-Email: chazzofalf@gmail.com 📧
-discord: chazz_the_intrepid 🎧
-X: chazz_the_intre [Whoa! I ran out of letters? Come on, Elon! 😲]
+Use it? Sure! Have Fun. But do please be kind and respectful to others! 
+Want Make something out this as in extend it or put? Well ping me and tell me about it. I would like to be part of the action! 
+Email: chazzofalf@gmail.com 
+discord: chazz_the_intrepid 
+X: chazz_the_intre 
 FB: charles.montgomery3 
 Github: chazzofalf
-Phone: ? Please ask me in a DM in one of the other contact methods. Be prepared to fully identify and explain yourself and your desired business with me. I am not giving out my number to just anybody! Sorry. 🙄 )
+
+If you want any other way of contacting me please just DM me using one of above listed contact methods.
+If you do. Please be prepared to fully identify yourself and explain your desired business with me.
