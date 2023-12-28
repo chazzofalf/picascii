@@ -302,6 +302,8 @@ Hit Ctrl+(NumPad 0) to get back to normal zoom and actually be able to read thin
 
 If you feel inclined with to display gratitude, or congratulatory gestures, then just send me a pat on the back. (Just Send a message containing 'Picascii is so awesome! ✋️🫷🙎‍♂️' to one of the listed channels below.)
 
+✝️ And you feel you want to praise the ONE who should be praised (the author of the author, the author of everything) then all you got to do is say a simple prayer of gratitude. He is the one who put this idea in my head by making me in such a way that I would come up with something such as this. And if you want help for things outside of this project (such as the things of life) then you can ask Him for that too. He is patiently waiting. What do have to lose? ✝️
+
 If you have any concerns or suggestions then send them to the place as well.
 
 
