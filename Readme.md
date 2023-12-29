@@ -143,7 +143,7 @@ Hit Ctrl+(NumPad 0) to get back to normal zoom and actually be able to read thin
   a. Execute the downloaded package (.pkg) file.
   b. MacOS will guide you the process of installing it. Usually default settings are appropriate.
 8. Once installed open the Terminal application (Can't find it? Spotlight is your friend! Just do a ⌘+Space and type in 'Terminal')
-9. Type out the following to create the project folder. This time I don't have to mention **Liv** as much since Mac OS (just so you know, Linux does as well) has the **~** to denote the user home folder (That is, For **Liv**, it would expand to `/Users/Liv`). (Oh you are going to love this! It is actually a  little bit less legwork on a Mac (or Linux, explained later)
+9. Type out the following to create the project folder. This time I don't have to mention **Liv** as much since Mac OS (just so you know, Linux does as well) has the **~** to denote the user home folder (That is, For **Liv**, it would expand to `/Users/Liv`). (Oh you are going to love this! It is actually a  little bit less legwork on a Mac (or Linux, explained later))
 
 Bash:
 
@@ -199,6 +199,7 @@ popd
 15. Type the following to generate a text drawing picture whose largest dimension is 256
 
 Bash:
+
 ```bash
 python -m picascii --with-colors --input-file livs_favorite_drawing.jpg  --output-file livs_favorite_text_drawing.txt --max-side-size 256
 ```
@@ -240,7 +241,7 @@ Bash:
 mkdir -p ~/Documents/picascii
 ```
 
-3. Create and then activiate the virtual environment. ( No skipping rope with the Python REPL like in windows. YES! You may dance and/or get out your choice musical instrument (if any) to celebrate if you like. 😉) If these commands do not execute you might want to make sure that python3.12 is in your $PATH.
+3. Create and then activate the virtual environment. ( No skipping rope with the Python REPL like in windows. YES! You may dance and/or get out your choice musical instrument (if any) to celebrate if you like. 😉) If these commands do not execute you might want to make sure that python3.12 is in your $PATH.
 
 Bash:
 
@@ -288,6 +289,7 @@ popd
 8. Type the following to generate a text drawing picture whose largest dimension is 256
 
 Bash:
+
 ```bash
 python -m picascii --with-colors --input-file livs_favorite_drawing.jpg  --output-file livs_favorite_text_drawing.txt --max-side-size 256
 ```
@@ -311,13 +313,13 @@ If you have any concerns or suggestions then send them to the place as well.
 
 ## Contact
 
-Charles "chazz_the_intrepid" Timothy Montgomery 2023 
-Use it? Sure! Have Fun. But do please be kind and respectful to others! 
+Charles "chazz_the_intrepid" Timothy Montgomery 2023
+Use it? Sure! Have Fun. But do please be kind and respectful to others!
 Want Make something out this as in extend it or put? Well ping me and tell me about it. I would like to be part of the action! 
-Email: chazzofalf@gmail.com, OR charles.montgomery@charter.net 
-discord: @chazz_the_intrepid 
-X: @chazz_the_intre 
-Facebook: @charles.montgomery3 
+Email: <chazzofalf@gmail.com>, OR <charles.montgomery@charter.net>
+discord: @chazz_the_intrepid
+X: @chazz_the_intre
+Facebook: @charles.montgomery3
 Github: @chazzofalf
 
 If you want some other way of contacting me, please just DM me using one of above listed contact methods. 
