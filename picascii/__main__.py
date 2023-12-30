@@ -2,18 +2,18 @@
 import sys
 
 try:
-    import picascii1 as p1
+    import picascii.picascii_monochrome as pmono
 except:
     try:
-        import picascii.picascii1 as p1
+        import picascii.picascii_monochrome as pmono
     except:
         exit(1)
 
 try:
-    import picascii2 as p2
+    import picascii.picascii_color as pcolor
 except:
     try:
-        import picascii.picascii2 as p2
+        import picascii.picascii_color as pcolor
     except:
         exit(1)
 
@@ -152,9 +152,9 @@ def main():
         help_the_user()
     else:
         if is_monochrome:
-            p1.process(input_file=input_file,output_file=output_file,max_size=max_side_size,bright_mark=mono_bright_color_symbol,dark_mark=mono_dark_color_symbol)
+            pmono.process(input_file=input_file,output_file=output_file,max_size=max_side_size,bright_mark=mono_bright_color_symbol,dark_mark=mono_dark_color_symbol)
         else:
-            p2.process(input_file=input_file,output_file=output_file,max_size=max_side_size)
+            pcolor.process(input_file=input_file,output_file=output_file,max_size=max_side_size)
 def help_the_user():
     help_text='''
 You invoke picascii by running it as a python module:
