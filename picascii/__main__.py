@@ -1,10 +1,10 @@
 # Read the Readme.md for instructions!
 import sys
 try:
-    import bad_modes as bm
+    import picascii.goofy_modes as gm
 except:
     try:
-        import picascii.bad_modes as bm
+        import picascii.goofy_modes as gm
     except:
         exit(1)
 try:
@@ -95,9 +95,9 @@ def main():
                     is_valid=False
                     sys.stderr.write('You have already selected maximum edge length. Choose one and only one.\n')
                     break
-            elif bm.has_immoral_undocumented_mode(mode=f):
+            elif gm.has_goofy_mode(mode=f):
                 if not is_with_color and not mono_bright_color_symbol_set and not mono_dark_color_symbol_set:
-                    (mono_bright_color_symbol,mono_dark_color_symbol) = bm.get_immoral_undocumented_mode_symbols(mode=f)
+                    (mono_bright_color_symbol,mono_dark_color_symbol) = gm.get_goofy_mode_symbols(mode=f)
                     mono_bright_color_symbol_set = True
                     mono_dark_color_symbol_set = True
                     is_monochrome = True

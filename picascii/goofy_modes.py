@@ -1,9 +1,9 @@
 # Read the Readme.md for instructions!
 # Some potentially controversial and therefore undocumented fun monochrome modes
-def has_immoral_undocumented_mode(mode:str):
+def has_goofy_mode(mode:str):
     return mode in ['--livie','--evil','--god-mode','--look-up-child','--come-on-elon']
     
-def get_immoral_undocumented_mode_symbols(mode:str):
+def get_goofy_mode_symbols(mode:str):
     if mode=='--livie': # Showing some support and being a little silly while I am at it. Are coders allowed to be fans? 
         return ('🦋','🟣')
     elif mode=='--no-so-fast-there-swiftie': # Can't say number one without this one! To make over a billion just by singing and crying ones heart out... Wow!
