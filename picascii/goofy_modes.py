@@ -4,7 +4,7 @@ def has_goofy_mode(mode:str):
     return mode in ['--livie','--evil','--god-mode','--look-up-child','--come-on-elon']
     
 def get_goofy_mode_symbols(mode:str):
-    if mode=='--livie': # Showing some support and being a little silly while I am at it. Are coders allowed to be fans? 
+    if mode=='--livie': # Showing some support and being a little silly while I am at it. Are almost middle-aged coders allowed to be fans of this one? 
         return ('🦋','🟣')
     elif mode=='--no-so-fast-there-swiftie': # Can't say number one without this one! To make over a billion just by singing and crying ones heart out... Wow!
         return ('🍭','💎')
@@ -14,7 +14,7 @@ def get_goofy_mode_symbols(mode:str):
         return ('☁️','😇')
     elif mode=='--look-up-child': # Very fun to listen to and I will say this, she is also much easier on your soul! 
         return ('🌸','🙇‍♀️')
-    elif mode=='--come-on-elon': # The man who is building rockets whom killed the bird. Why!?!
+    elif mode=='--come-on-elon': # The man who is building rockets whom killed The Twitter Bird. Why!?!
         return ('🐤','✖️')    
 
 # Yes these are kind of sort of "Edgey" which is my they are here and not in the main code file.
