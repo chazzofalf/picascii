@@ -25,7 +25,7 @@ Windows, MacOS, and Linux (Ubuntu) being popular OS are listed here.
 
 ### Windows
 
-1. Create a folder for output for this script and place it there (for instance, for a user named **Liv**, if your name is different then use THAT name in place of **Liv**, a good spot would be : `C:\Users\Liv\Documents\picascii`)
+1. Create a folder for output for this script and place it there (for instance, for a user named **Chuck**, if your name is different then use THAT name in place of **Chuck**, a good spot would be : `C:\Users\Chuck\Documents\picascii`)
 2. Go to Microsoft Store (log in if you haven't)
 3. Search for Python
 4. Install Python 3.12
@@ -34,10 +34,10 @@ Windows, MacOS, and Linux (Ubuntu) being popular OS are listed here.
 
 ```Python
 import venv
-venv.create(env_dir='C:\\Users\\Liv\\Documents\\picascii\\.venv', clear=True, with_pip=True, upgrade_deps=True) 
+venv.create(env_dir='C:\\Users\\Chuck\\Documents\\picascii\\.venv', clear=True, with_pip=True, upgrade_deps=True) 
 ```
 
-If we are using the example folder (The user name would be your own instead of 'Liv' though. If it is the same, then lucky hit, good for you, and hello.!)
+If we are using the example folder (The user name would be your own instead of 'Chuck' though. If it is the same, then lucky hit, good for you, and hello.!)
 
 This will take a pretty minute so please be patient and wait for the >>> to appear.
 7. Now close the Python prompt by typing and hitting enter.
@@ -59,7 +59,7 @@ Notice that your prompt should change its look to the denoted virtual directory
 It might look like this:
 
 ```Text
-(.venv) C:\Users\Liv\Documents\picascii>
+(.venv) C:\Users\Chuck\Documents\picascii>
 ```
 
 9 . To verify that the right Python is selected do the following (line by line):
@@ -77,7 +77,7 @@ import sys
 sys.executable
 ```
 
-if `C:\\Users\\Liv\\Documents\\picascii\\.venv\\Scripts\\python.exe` (Knowing that the **Liv** is replaced with whatever your username is, of course.) shows up here then everything is correct so far.
+if `C:\\Users\\Chuck\\Documents\\picascii\\.venv\\Scripts\\python.exe` (Knowing that the **Chuck** is replaced with whatever your username is, of course.) shows up here then everything is correct so far.
 
 10. exit the Python prompt by typing
 
@@ -100,14 +100,14 @@ python -m pip install Pillow
 
 12. Now install this package in the virtual environment.
 
-13. Let's just say you have checked out the project into the default code folder for this project. (`C:\Users\Liv\source\repos\picascii`) [Replacing the user name if necessary.] You will need to open another powershell window (You will need keep that one and do the following)
+13. Let's just say you have checked out the project into the default code folder for this project. (`C:\Users\Chuck\source\repos\picascii`) [Replacing the user name if necessary.] You will need to open another powershell window (You will need keep that one and do the following)
 
 Powershell:
 
 ```Powershell
-cd C:\Users\Liv\Documents\picascii
+cd C:\Users\Chuck\Documents\picascii
 . .venv\Scripts\activate.ps1
-cd C:\Users\Liv\source\repos\picascii
+cd C:\Users\Chuck\source\repos\picascii
 pip install .
 ```
 
@@ -116,17 +116,17 @@ Wait while Python installs all the dependencies and this package.
 14. You can now close the "pip install" PowerShell window. You do not need it anymore.
 
 15. Go to the other Powershell Window and be ready to have some fun!
-    a. Select a picture (Let's say it is called 'livs_favorite_drawing.jpg' for the example, and you want to create a file called 'livs_favorite_text_drawing.txt', if a different picture with a different file name was selected then use that picture's filename) of your choosing and copy into the `C:\Users\Liv\Documents\picascii` folder. 
+    a. Select a picture (Let's say it is called 'chucks_favorite_drawing.jpg' for the example, and you want to create a file called 'chucks_favorite_text_drawing.txt', if a different picture with a different file name was selected then use that picture's filename) of your choosing and copy into the `C:\Users\Chuck\Documents\picascii` folder. 
     b. Type the following to generate a text drawing picture whose largest dimension is 256:
 
 Powershell:
 
 ```Powershell
-python -m picascii --with-colors --input-file livs_favorite_drawing.jpg  --output-file livs_favorite_text_drawing.txt --max-side-size 256
+python -m picascii --with-colors --input-file chucks_favorite_drawing.jpg  --output-file chucks_favorite_text_drawing.txt --max-side-size 256
 ```
 
-It should generate the text file livs_favorite_text_drawing.txt (If it doesn't, please tell me, either I did something wrong or I in my excitement didn't explain things in this file properly. Nonetheless, I would need your input on this matter if something goes wrong. I would gladly receive your input if you have any suggestions or concerns. )
-16. Open livs_favorite_text_drawing.txt in a consistent Text editor that uses a proper monospaced font such as Microsoft Visual Studio Code (The zooming out instructions are written for Microsoft Visual Studio Code).  You might not see desired results if you are using plain old Notepad or Word.
+It should generate the text file chucks_favorite_text_drawing.txt (If it doesn't, please tell me, either I did something wrong or I in my excitement didn't explain things in this file properly. Nonetheless, I would need your input on this matter if something goes wrong. I would gladly receive your input if you have any suggestions or concerns. )
+16. Open chucks_favorite_text_drawing.txt in a consistent Text editor that uses a proper monospaced font such as Microsoft Visual Studio Code (The zooming out instructions are written for Microsoft Visual Studio Code).  You might not see desired results if you are using plain old Notepad or Word.
 Zoom out of the text by typing Ctrl+- until the screen does not respond to you zooming out anymore.
 You should have your image take shape on your screen.  You might have to scroll a little to see the entire work. But, you should see the gist of it. Neat. Right?  
 Hit Ctrl+(NumPad 0) to get back to a normal zoom and be able to read things.
@@ -143,7 +143,7 @@ Hit Ctrl+(NumPad 0) to get back to a normal zoom and be able to read things.
   a. Execute the downloaded package (.pkg) file.
   b. MacOS will guide you through the process of installing it. Usually, default settings are appropriate.
 8. Once installed open the Terminal application (Can't find it? Spotlight is your friend! Just do a ⌘+Space and type in 'Terminal')
-9. Type out the following to create the project folder. This time I don't have to mention **Liv** as much since Mac OS (just so you know, Linux does as well) has the **&#126;** to denote the user home folder (That is, For **Liv**, it would expand to `/Users/Liv`). (Oh you are going to love this! It is actually a  little bit less legwork on a Mac (or Linux, explained later))
+9. Type out the following to create the project folder. This time I don't have to mention **Chuck** as much since Mac OS (just so you know, Linux does as well) has the **&#126;** to denote the user home folder (That is, For **Chuck**, it would expand to `/Users/Chuck`). (Oh you are going to love this! It is actually a  little bit less legwork on a Mac (or Linux, explained later))
 
 Bash:
 
@@ -171,7 +171,7 @@ Bash:
 python <( echo "import sys" ; echo "print(sys.executable)" )
 ```
 
-You should see `/Users/Liv/Documents/picascii/.venv/bin/python`. If you do, then all is well. Phew! If not, then check your steps!
+You should see `/Users/Chuck/Documents/picascii/.venv/bin/python`. If you do, then all is well. Phew! If not, then check your steps!
 12. Now make sure everything is truly updated. The virtual environment (venv) creation step should have already done that but it is always good to be sure.
 Do the following and be patient on each of the steps:
 
@@ -195,17 +195,17 @@ popd
 ```
 
 14. Now let us have fun!
-    a. For best results select a picture (Let's say it is called 'livs_favorite_drawing.jpg' for the example, if a different picture was select then use that picture filename) of your choosing and copy into the &#126;/Documents/picascii folder. (Remember **&#126;** == `/Users/Liv` if you are **Liv**. If not replace it with your user name.) 
+    a. For best results select a picture (Let's say it is called 'chucks_favorite_drawing.jpg' for the example, if a different picture was select then use that picture filename) of your choosing and copy into the &#126;/Documents/picascii folder. (Remember **&#126;** == `/Users/Chuck` if you are **Chuck**. If not replace it with your user name.) 
 15. Type the following to generate a text drawing picture whose largest dimension is 256
 
 Bash:
 
 ```bash
-python -m picascii --with-colors --input-file livs_favorite_drawing.jpg  --output-file livs_favorite_text_drawing.txt --max-side-size 256
+python -m picascii --with-colors --input-file chucks_favorite_drawing.jpg  --output-file chucks_favorite_text_drawing.txt --max-side-size 256
 ```
 
-It should generate the text file livs_favorite_text_drawing.txt (If it doesn't, please tell me, either I did something wrong or I in my excitement didn't explain things in this file properly. Nonetheless, I would need your input on this matter if something goes wrong. I would gladly receive your input if you have any suggestions or concerns. )
-16. Open livs_favorite_text_drawing.txt in a consistent Text editor that uses a proper monospaced font such as Microsoft Visual Studio Code (Yes they do have that for Mac too!) (The zooming out instructions are written for Microsoft Visual Studio Code).  You might not see desired results if you are using plain old Notepad or Word.
+It should generate the text file chucks_favorite_text_drawing.txt (If it doesn't, please tell me, either I did something wrong or I in my excitement didn't explain things in this file properly. Nonetheless, I would need your input on this matter if something goes wrong. I would gladly receive your input if you have any suggestions or concerns. )
+16. Open chucks_favorite_text_drawing.txt in a consistent Text editor that uses a proper monospaced font such as Microsoft Visual Studio Code (Yes they do have that for Mac too!) (The zooming out instructions are written for Microsoft Visual Studio Code).  You might not see desired results if you are using plain old Notepad or Word.
 Zoom out of the text by typing ⌘+- until the screen does not respond to you zooming out anymore.
 You should have your image take shape on your screen.  You might have to scroll a little to see the entire work. But, you should see the gist of it. Neat. Right?  
 Hit ⌘+(NumPad 0) to get back to a normal zoom and be able to read things. If you do not have a NumPad because you have one of those common "skimpy" Apple Keyboards the simply Navigate the VS Code Menubar to (View > Appearance > Reset Zoom) and click.
@@ -233,7 +233,7 @@ apt install python3.12
 curl -sS https://bootstrap.pypa.io/get-pip.py | python3.12
 ```
 
-2. Type out the following to create the project folder. This time I don't have to mention **Liv** as much since Linux (just so you know, Mac OS does as well) has the **&#126;** to denote the user home folder (That is, For **Liv**, it would expand to `/home/Liv`). (Oh you are going to love this! It is actually a  little bit less legwork on Linux (or a Mac, as explained earlier))
+2. Type out the following to create the project folder. This time I don't have to mention **Chuck** as much since Linux (just so you know, Mac OS does as well) has the **&#126;** to denote the user home folder (That is, For **Chuck**, it would expand to `/home/Chuck`). (Oh you are going to love this! It is actually a  little bit less legwork on Linux (or a Mac, as explained earlier))
 
 Bash:
 
@@ -261,7 +261,7 @@ Bash:
 python <( echo "import sys" ; echo "print(sys.executable)" )
 ```
 
-You should see `/home/Liv/Documents/picascii/.venv/bin/python`. If you do, then all is well. Phew! If not, then check your steps!
+You should see `/home/Chuck/Documents/picascii/.venv/bin/python`. If you do, then all is well. Phew! If not, then check your steps!
 5. Now make sure everything is truly updated. The virtual environment (venv) creation step should have already done that but it is always good to be sure.
 Do the following and be patient on each of the steps:
 
@@ -285,17 +285,17 @@ popd
 ```
 
 7. Now let's have fun!
-    a. For best results select a picture (Let's say it is called 'livs_favorite_drawing.jpg' for the example, if a different picture was select then use that picture filename) of your choosing and copy into the &#126;/Documents/picascii folder. (Remember **&#126;** == `/home/Liv` if you are **Liv**. If not replace it with your user name.) 
+    a. For best results select a picture (Let's say it is called 'chucks_favorite_drawing.jpg' for the example, if a different picture was select then use that picture filename) of your choosing and copy into the &#126;/Documents/picascii folder. (Remember **&#126;** == `/home/Chuck` if you are **Chuck**. If not replace it with your user name.) 
 8. Type the following to generate a text drawing picture whose largest dimension is 256
 
 Bash:
 
 ```bash
-python -m picascii --with-colors --input-file livs_favorite_drawing.jpg  --output-file livs_favorite_text_drawing.txt --max-side-size 256
+python -m picascii --with-colors --input-file chucks_favorite_drawing.jpg  --output-file chucks_favorite_text_drawing.txt --max-side-size 256
 ```
 
-It should generate the text file livs_favorite_text_drawing.txt (If it doesn't, please tell me, either I did something wrong or I in my excitement didn't explain things in this file properly. Nonetheless, I would need your input on this matter if something goes wrong. I would gladly receive your input if you have any suggestions or concerns. )
-9. Open livs_favorite_text_drawing.txt in a consistent Text editor that uses a proper monospaced font such as Microsoft Visual Studio Code (Yes they do have that for Mac too!) (The zooming out instructions are written for Microsoft Visual Studio Code).  You might not see desired results if you are using plain old Notepad or Word.
+It should generate the text file chucks_favorite_text_drawing.txt (If it doesn't, please tell me, either I did something wrong or I in my excitement didn't explain things in this file properly. Nonetheless, I would need your input on this matter if something goes wrong. I would gladly receive your input if you have any suggestions or concerns. )
+9. Open chucks_favorite_text_drawing.txt in a consistent Text editor that uses a proper monospaced font such as Microsoft Visual Studio Code (Yes they do have that for Mac too!) (The zooming out instructions are written for Microsoft Visual Studio Code).  You might not see desired results if you are using plain old Notepad or Word.
 Zoom out of the text by typing Ctrl+- until the screen does not respond to you zooming out anymore.
 You should have your image take shape on your screen.  You might have to scroll a little to see the entire work. But, you should see the gist of it. Neat. Right?  
 Hit Ctrl+(NumPad 0) to get back to normal zoom and actually be able to read things again. If you do not have a NumPad because you have one of those common "skimpy" Apple Keyboards the simply Navigate the VS Code Menubar to (View > Appearance > Reset Zoom) and click.
