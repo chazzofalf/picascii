@@ -314,8 +314,11 @@ If you have any concerns or suggestions then send them to the place as well.
 ## Contact
 
 Charles Timothy Montgomery 2023
+
 Use it? Sure! Have Fun. But do please be kind and respectful to others!
-Want Make something out this as in extend it or put? Well ping me and tell me about it. I would like to be part of the action! 
+
+Want Make something out this as in extend it or put? Well ping me and tell me about it. I would like to be part of the action!
+
 Email: <chazzofalf@gmail.com>, OR <charles.montgomery@charter.net>
 
 discord: @chazz_the_intrepid
