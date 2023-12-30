@@ -317,7 +317,7 @@ Charles Timothy Montgomery 2023
 
 Use it? Sure! Have Fun. But do please be kind and respectful to others and their rights!
 
-Want Make something out this as in extend it or put? Well ping me and tell me about it. I would like to be part of the action!
+Want to make something out this or extend it or make it a part of something bigger? Sure! Just ping me and tell me about it. I may like to be part of the action!
 
 Email: <chazzofalf@gmail.com>, OR <charles.montgomery@charter.net>
 
