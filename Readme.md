@@ -48,7 +48,7 @@ exit()
 
 8. Open Windows Powershell (Win+R followed by 'cmd.exe' and then Enter)
 It should open up in your user folder
-Type out the following to get to the proper folder (Denoted by a '~>' Prefix, Don't type the prefix.)
+Type out the following to get to the proper folder (Denoted by a '&#126;>' Prefix, Don't type the prefix.)
 
 ```powershell
 cd Documents\picascii
@@ -143,7 +143,7 @@ Hit Ctrl+(NumPad 0) to get back to normal zoom and actually be able to read thin
   a. Execute the downloaded package (.pkg) file.
   b. MacOS will guide you the process of installing it. Usually default settings are appropriate.
 8. Once installed open the Terminal application (Can't find it? Spotlight is your friend! Just do a ⌘+Space and type in 'Terminal')
-9. Type out the following to create the project folder. This time I don't have to mention **Liv** as much since Mac OS (just so you know, Linux does as well) has the **~** to denote the user home folder (That is, For **Liv**, it would expand to `/Users/Liv`). (Oh you are going to love this! It is actually a  little bit less legwork on a Mac (or Linux, explained later))
+9. Type out the following to create the project folder. This time I don't have to mention **Liv** as much since Mac OS (just so you know, Linux does as well) has the **&#126;** to denote the user home folder (That is, For **Liv**, it would expand to `/Users/Liv`). (Oh you are going to love this! It is actually a  little bit less legwork on a Mac (or Linux, explained later))
 
 Bash:
 
@@ -195,7 +195,7 @@ popd
 ```
 
 14. Now Lets have fun!
-    a. For best results select a picture (Let's say it is called 'livs_favorite_drawing.jpg' for the example, if a different picture was select then use that picture filename) of your choosing and copy into the ~/Documents/picascii folder. (Remember **~** == `/Users/Liv` if you are **Liv**. If not replace it with your user name.) 
+    a. For best results select a picture (Let's say it is called 'livs_favorite_drawing.jpg' for the example, if a different picture was select then use that picture filename) of your choosing and copy into the &#126;/Documents/picascii folder. (Remember **&#126;** == `/Users/Liv` if you are **Liv**. If not replace it with your user name.) 
 15. Type the following to generate a text drawing picture whose largest dimension is 256
 
 Bash:
@@ -233,7 +233,7 @@ apt install python3.12
 curl -sS https://bootstrap.pypa.io/get-pip.py | python3.12
 ```
 
-2. Type out the following to create the project folder. This time I don't have to mention **Liv** as much since Linux (just so you know, Mac OS does as well) has the **~** to denote the user home folder (That is, For **Liv**, it would expand to `/home/Liv`). (Oh you are going to love this! It is actually a  little bit less legwork on Linux (or a Mac, as explained earlier))
+2. Type out the following to create the project folder. This time I don't have to mention **Liv** as much since Linux (just so you know, Mac OS does as well) has the **&#126;** to denote the user home folder (That is, For **Liv**, it would expand to `/home/Liv`). (Oh you are going to love this! It is actually a  little bit less legwork on Linux (or a Mac, as explained earlier))
 
 Bash:
 
@@ -285,7 +285,7 @@ popd
 ```
 
 7. Now Lets have fun!
-    a. For best results select a picture (Let's say it is called 'livs_favorite_drawing.jpg' for the example, if a different picture was select then use that picture filename) of your choosing and copy into the ~/Documents/picascii folder. (Remember **~** == `/home/Liv` if you are **Liv**. If not replace it with your user name.) 
+    a. For best results select a picture (Let's say it is called 'livs_favorite_drawing.jpg' for the example, if a different picture was select then use that picture filename) of your choosing and copy into the &#126;/Documents/picascii folder. (Remember **&#126;** == `/home/Liv` if you are **Liv**. If not replace it with your user name.) 
 8. Type the following to generate a text drawing picture whose largest dimension is 256
 
 Bash:
