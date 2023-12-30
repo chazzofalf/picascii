@@ -12,7 +12,7 @@
     * pip_review (1.3.0)
   * Dependencies to actually run picascii
     * Pillow (10.1.0)
-  * An operating system that can install and run python.
+  * An operating system that can install and run Python.
     * Windows
     * MacOS
     * Linux
@@ -21,16 +21,16 @@
 
 ## Procedure
 
-Windows, MacOS, and Linux (Ubuntu) being popular OS's are listed here.
+Windows, MacOS, and Linux (Ubuntu) being popular OS are listed here.
 
 ### Windows
 
 1. Create a folder for output for this script and place it there (for instance, for a user named **Liv**, if your name is different then use THAT name in place of **Liv**, a good spot would be : `C:\Users\Liv\Documents\picascii`)
-2. Go to Microsoft Store (Login if you haven't)
+2. Go to Microsoft Store (log in if you haven't)
 3. Search for Python
 4. Install Python 3.12
-5. Open Python 3.12 via start menu (You will be greeted with a Python REPL (Read Eval Print Loop) Prompt). Don't fret if your python experience level is less than basic. Help is on the way!
-6. Type following into the prompt one line at a time:
+5. Open Python 3.12 via the start menu (You will be greeted with a Python REPL (Read Eval Print Loop) Prompt). Don't fret if your python experience level is less than basic. Help is on the way!
+6. Type the following into the prompt one line at a time:
 
 ```Python
 import venv
@@ -40,7 +40,7 @@ venv.create(env_dir='C:\\Users\\Liv\\Documents\\picascii\\.venv', clear=True, wi
 If we are using the example folder (The user name would be your own instead of 'Liv' though. If it is the same, then lucky hit, good for you, and hello.!)
 
 This will take a pretty minute so please be patient and wait for the >>> to appear.
-7. Now close the python prompt by typing and hitting enter.
+7. Now close the Python prompt by typing and hitting enter.
 
 ```Python
 exit()
@@ -50,19 +50,19 @@ exit()
 It should open up in your user folder
 Type out the following to get to the proper folder (Denoted by a '&#126;>' Prefix, Don't type the prefix.)
 
-```powershell
+```PowerShell
 cd Documents\picascii
 . .venv\Scripts\activate.ps1
 ```
 
-Notice that your prompt should change its look to denoted virtual directory
+Notice that your prompt should change its look to the denoted virtual directory
 It might look like this:
 
 ```Text
 (.venv) C:\Users\Liv\Documents\picascii>
 ```
 
-9 . To verify that the right python is selected do the following (line by line):
+9 . To verify that the right Python is selected do the following (line by line):
 
 Powershell:
 
@@ -79,7 +79,7 @@ sys.executable
 
 if `C:\\Users\\Liv\\Documents\\picascii\\.venv\\Scripts\\python.exe` (Knowing that the **Liv** is replaced with whatever your username is, of course.) shows up here then everything is correct so far.
 
-10. Just exit the python prompt by typing
+10. exit the Python prompt by typing
 
 ```Python
 exit()
@@ -98,7 +98,7 @@ python -m pip_review -a
 python -m pip install Pillow 
 ```
 
-12. Now install this package to the virtual environment.
+12. Now install this package in the virtual environment.
 
 13. Let's just say you have checked out the project into the default code folder for this project. (`C:\Users\Liv\source\repos\picascii`) [Replacing the user name if necessary.] You will need to open another powershell window (You will need keep that one and do the following)
 
@@ -111,9 +111,9 @@ cd C:\Users\Liv\source\repos\picascii
 pip install .
 ```
 
-Wait while python install all the dependencies and this package.
+Wait while Python installs all the dependencies and this package.
 
-14. You can now close the "pip install" powershell window. You do not need it anymore.
+14. You can now close the "pip install" PowerShell window. You do not need it anymore.
 
 15. Go to the other Powershell Window and be ready to have some fun!
     a. Select a picture (Let's say it is called 'livs_favorite_drawing.jpg' for the example, and you want to create a file called 'livs_favorite_text_drawing.txt', if a different picture with a different file name was selected then use that picture's filename) of your choosing and copy into the `C:\Users\Liv\Documents\picascii` folder. 
@@ -127,13 +127,13 @@ python -m picascii --with-colors --input-file livs_favorite_drawing.jpg  --outpu
 
 It should generate the text file livs_favorite_text_drawing.txt (If it doesn't, please tell me, either I did something wrong or I in my excitement didn't explain things in this file properly. Nonetheless, I would need your input on this matter if something goes wrong. I would gladly receive your input if you have any suggestions or concerns. )
 16. Open livs_favorite_text_drawing.txt in a consistent Text editor that uses a proper monospaced font such as Microsoft Visual Studio Code (The zooming out instructions are written for Microsoft Visual Studio Code).  You might not see desired results if you are using plain old Notepad or Word.
-Zoom out of the text by typing Ctrl+- until the screen does not respond to you zooming out any more.
-You should your image take shape on your screen.  You might have to scroll a little to see the entire work. But, you should see the gist of it. Neat. Right?  
-Hit Ctrl+(NumPad 0) to get back to normal zoom and actually be able to read things again.
+Zoom out of the text by typing Ctrl+- until the screen does not respond to you zooming out anymore.
+You should have your image take shape on your screen.  You might have to scroll a little to see the entire work. But, you should see the gist of it. Neat. Right?  
+Hit Ctrl+(NumPad 0) to get back to a normal zoom and be able to read things.
 
 ### MacOS
 
-1. Install Python 3.12 to your mac first navigating to https://www.python.org
+1. Install Python 3.12 to your Mac first navigating to https://www.python.org
 2. Hover on the Downloads Tab and click on Mac OS
 3. Select the Latest release (3.12.1 at the time of this writing)
 4. Scroll down to the bottom of the page where it says "Files"
@@ -141,7 +141,7 @@ Hit Ctrl+(NumPad 0) to get back to normal zoom and actually be able to read thin
 6. Your browser will download the installer. Please be patient.
 7. For these next steps I hope you have administrator access for macOS will not let you run the installer properly without it.
   a. Execute the downloaded package (.pkg) file.
-  b. MacOS will guide you the process of installing it. Usually default settings are appropriate.
+  b. MacOS will guide you through the process of installing it. Usually, default settings are appropriate.
 8. Once installed open the Terminal application (Can't find it? Spotlight is your friend! Just do a ⌘+Space and type in 'Terminal')
 9. Type out the following to create the project folder. This time I don't have to mention **Liv** as much since Mac OS (just so you know, Linux does as well) has the **&#126;** to denote the user home folder (That is, For **Liv**, it would expand to `/Users/Liv`). (Oh you are going to love this! It is actually a  little bit less legwork on a Mac (or Linux, explained later))
 
@@ -151,7 +151,7 @@ Bash:
 mkdir -p ~/Documents/picascii
 ```
 
-10. Create and then activiate the virtual environment. ( No skipping rope with the Python REPL like in windows. YES! You may dance and/or get out your choice musical instrument (if any) to celebrate if you like. 😉) If these commands do not execute you might want to make sure that python3.12 is in your $PATH.
+10. Create and then activate the virtual environment. ( No skipping rope with the Python REPL like in windows. YES! You may dance and/or get out your choice musical instrument (if any) to celebrate if you like. 😉) If these commands do not execute you might want to make sure that python3.12 is in your $PATH.
 
 Bash:
 
@@ -163,7 +163,7 @@ cd ~/Documents/picascii
 
 The shell prompt should reflect that you are in the virtual environment by displaying a `(.venv)` in beginning of the text.
 
-11. Verify that right python is being used. Make sure you use python and not python3.12 from here on out.
+11. Verify that the right Python is being used. Make sure you use Python and not python3.12 from here on out.
 
 Bash:
 
@@ -172,7 +172,7 @@ python <( echo "import sys" ; echo "print(sys.executable)" )
 ```
 
 You should see `/Users/Liv/Documents/picascii/.venv/bin/python`. If you do, then all is well. Phew! If not, then check your steps!
-12. Now make sure everything is truly updated. The venv creation step should have already done that but it is always good to be sure.
+12. Now make sure everything is truly updated. The virtual environment (venv) creation step should have already done that but it is always good to be sure.
 Do the following and be patient on each of the steps:
 
 Bash:
@@ -194,7 +194,7 @@ pip install .
 popd
 ```
 
-14. Now Lets have fun!
+14. Now let us have fun!
     a. For best results select a picture (Let's say it is called 'livs_favorite_drawing.jpg' for the example, if a different picture was select then use that picture filename) of your choosing and copy into the &#126;/Documents/picascii folder. (Remember **&#126;** == `/Users/Liv` if you are **Liv**. If not replace it with your user name.) 
 15. Type the following to generate a text drawing picture whose largest dimension is 256
 
@@ -206,9 +206,9 @@ python -m picascii --with-colors --input-file livs_favorite_drawing.jpg  --outpu
 
 It should generate the text file livs_favorite_text_drawing.txt (If it doesn't, please tell me, either I did something wrong or I in my excitement didn't explain things in this file properly. Nonetheless, I would need your input on this matter if something goes wrong. I would gladly receive your input if you have any suggestions or concerns. )
 16. Open livs_favorite_text_drawing.txt in a consistent Text editor that uses a proper monospaced font such as Microsoft Visual Studio Code (Yes they do have that for Mac too!) (The zooming out instructions are written for Microsoft Visual Studio Code).  You might not see desired results if you are using plain old Notepad or Word.
-Zoom out of the text by typing ⌘+- until the screen does not respond to you zooming out any more.
-You should your image take shape on your screen.  You might have to scroll a little to see the entire work. But, you should see the gist of it. Neat. Right?  
-Hit ⌘+(NumPad 0) to get back to normal zoom and actually be able to read things again. If you do not have a NumPad because you have one of those common "skimpy" Apple Keyboards the simply Navigate the VS Code Menubar to (View > Appearance > Reset Zoom) and click.
+Zoom out of the text by typing ⌘+- until the screen does not respond to you zooming out anymore.
+You should have your image take shape on your screen.  You might have to scroll a little to see the entire work. But, you should see the gist of it. Neat. Right?  
+Hit ⌘+(NumPad 0) to get back to a normal zoom and be able to read things. If you do not have a NumPad because you have one of those common "skimpy" Apple Keyboards the simply Navigate the VS Code Menubar to (View > Appearance > Reset Zoom) and click.
 
 ### Linux (Ubuntu)
 
@@ -253,7 +253,7 @@ cd ~/Documents/picascii
 
 The shell prompt should reflect that you are in the virtual environment by displaying a `(.venv)` in beginning of the text.
 
-4. Verify that right python is being used. Make sure you use python and not python3.12 from here on out.
+4. Verify that the right Python is being used. Make sure you use Python and not python3.12 from here on out.
 
 Bash:
 
@@ -262,7 +262,7 @@ python <( echo "import sys" ; echo "print(sys.executable)" )
 ```
 
 You should see `/home/Liv/Documents/picascii/.venv/bin/python`. If you do, then all is well. Phew! If not, then check your steps!
-5. Now make sure everything is truly updated. The venv creation step should have already done that but it is always good to be sure.
+5. Now make sure everything is truly updated. The virtual environment (venv) creation step should have already done that but it is always good to be sure.
 Do the following and be patient on each of the steps:
 
 Bash:
@@ -284,7 +284,7 @@ pip install .
 popd
 ```
 
-7. Now Lets have fun!
+7. Now let's have fun!
     a. For best results select a picture (Let's say it is called 'livs_favorite_drawing.jpg' for the example, if a different picture was select then use that picture filename) of your choosing and copy into the &#126;/Documents/picascii folder. (Remember **&#126;** == `/home/Liv` if you are **Liv**. If not replace it with your user name.) 
 8. Type the following to generate a text drawing picture whose largest dimension is 256
 
@@ -296,20 +296,15 @@ python -m picascii --with-colors --input-file livs_favorite_drawing.jpg  --outpu
 
 It should generate the text file livs_favorite_text_drawing.txt (If it doesn't, please tell me, either I did something wrong or I in my excitement didn't explain things in this file properly. Nonetheless, I would need your input on this matter if something goes wrong. I would gladly receive your input if you have any suggestions or concerns. )
 9. Open livs_favorite_text_drawing.txt in a consistent Text editor that uses a proper monospaced font such as Microsoft Visual Studio Code (Yes they do have that for Mac too!) (The zooming out instructions are written for Microsoft Visual Studio Code).  You might not see desired results if you are using plain old Notepad or Word.
-Zoom out of the text by typing Ctrl+- until the screen does not respond to you zooming out any more.
-You should your image take shape on your screen.  You might have to scroll a little to see the entire work. But, you should see the gist of it. Neat. Right?  
+Zoom out of the text by typing Ctrl+- until the screen does not respond to you zooming out anymore.
+You should have your image take shape on your screen.  You might have to scroll a little to see the entire work. But, you should see the gist of it. Neat. Right?  
 Hit Ctrl+(NumPad 0) to get back to normal zoom and actually be able to read things again. If you do not have a NumPad because you have one of those common "skimpy" Apple Keyboards the simply Navigate the VS Code Menubar to (View > Appearance > Reset Zoom) and click.
 
 ## And Finally
 
 If you feel inclined with to display gratitude, or congratulatory gestures, then just send me a pat on the back. (Just Send a message containing 'Picascii is so awesome! ✋️🫷🙎‍♂️' to one of the listed channels below.)
 
-✝️ And you feel you want to praise the ONE who should be praised (the author of the author, the author of everything) then all you got to do is say a simple prayer of gratitude. He is the one who put this idea in my head by making me in such a way that I would come up with something such as this. And if you want help for things outside of this project (such as the things of life) then you can ask Him for that too. He is patiently waiting. What do have to lose? ✝️
-
 If you have any concerns or suggestions then send them to the place as well.
-
-
-
 
 ## Contact
 
