@@ -17,10 +17,19 @@ except:
     except:
         exit(1)
 
+try:
+    import picascii.picascii_ansi as pansi
+except:
+    try:
+        import picascii.picascii_ansi as pansi
+    except:
+        exit(1)
+
 def main():        
     is_valid=True
     is_monochrome=False
     is_with_color=False
+    is_ansi=False
     user_needs_help=False
     mono_bright_color_symbol='⚪'
     mono_dark_color_symbol='⚫'
@@ -50,6 +59,13 @@ def main():
                 else:
                     is_valid=False
                     sys.stderr.write('You have already selected mode --monochrome. Choose one and only one.\n')
+                    break
+            elif f == '--ansi':
+                if not (is_monochrome or is_with_color):
+                    is_ansi=True
+                else:
+                    is_valid=False
+                    sys.stderr.write('You have already selected another mode. Choose only one.\n')
                     break
             elif f == '--bright-symbol':
                 if is_monochrome and not mono_bright_color_symbol_set:
@@ -88,7 +104,7 @@ def main():
                 else:
                     is_valid=False
                     sys.stderr.write('You have already selected maximum edge length. Choose one and only one.\n')
-                    break            
+                    break
             else:
                 is_valid=False
                 sys.stderr.write('This argument does not make sense.\n')
@@ -123,7 +139,7 @@ def main():
                 max_side_size_parse_mode=False
             except:
                 is_valid=False
-                sys.stderr.write('The side length must be an integer.\n')                
+                sys.stderr.write('The side length must be an integer.\n')
                 break
             
     sys.stderr.write('Current requested settings were:\n')
@@ -132,7 +148,7 @@ def main():
     sys.stderr.write(f'--input-file={input_file}\n')
     sys.stderr.write(f'--output-file={output_file}\n')
     sys.stderr.write(f'--max-side-size={max_side_size}\n')
-    if not ((is_monochrome or is_with_color) and input_file is not None and output_file is not None and max_side_size is not None):
+    if not ((is_monochrome or is_with_color or is_ansi) and input_file is not None and output_file is not None and max_side_size is not None):
         sys.stderr.write('You did not fill out all the necessary options\n')
         sys.stderr.write('Current requested settings were:\n')
         sys.stderr.write(f'--monochrome={is_monochrome}\n')
@@ -140,8 +156,6 @@ def main():
         sys.stderr.write(f'--input-file={input_file}\n')
         sys.stderr.write(f'--output-file={output_file}\n')
         sys.stderr.write(f'--max-side-size={max_side_size}\n')
-        
-        
         is_valid = False
     
     if not is_valid:
@@ -153,6 +167,8 @@ def main():
     else:
         if is_monochrome:
             pmono.process(input_file=input_file,output_file=output_file,max_size=max_side_size,bright_mark=mono_bright_color_symbol,dark_mark=mono_dark_color_symbol)
+        elif is_ansi:
+            pansi.process(input_file=input_file,output_file=output_file,max_size=max_side_size)
         else:
             pcolor.process(input_file=input_file,output_file=output_file,max_size=max_side_size)
 def help_the_user():
@@ -162,7 +178,8 @@ You invoke picascii by running it as a python module:
 Those options are:
 --monochrome - You want to make a monochome text image using only two different symbols
 --with-colors - You want to make a colorful text image using various color dot symbols.
-You should be aware that you can only use one of --monochrome or --with-colors options during the invocation
+--ansi - You want to make a true‑color ANSI escape sequence text image.
+You should be aware that you can only use one of --monochrome, --with-colors, or --ansi options during the invocation
 These options are only available to you if you select monochrome mode.
 --bright-symbol - You want to use a specific symbol to represent bright pixels. (⚪ is the default)
 --dark-symbol - You want to use a specific symbol to represent dark pixels. (⚫ is the default)
@@ -188,5 +205,5 @@ if __name__=='__main__':
 # FB: charles.montgomery3 
 # Github: chazzofalf
 
-# If you want any other way of contacting me please just DM me using one of above listed contact methods.
+# If you want any other way of contacting me please just DM you using one of above listed contact methods.
 # If you do. Please be prepared to fully identify yourself and explain your desired business with me.
