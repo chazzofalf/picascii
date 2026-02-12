@@ -14,7 +14,7 @@ def process(input_file,output_file,max_size):
     size=max_size
     
     img=PIL.Image.open(name)
-    
+    img=img.convert(mode='RGB')
     s=img.size
     sc=s[0] if s[0] > s[1] else s[1]
     r=size/sc
